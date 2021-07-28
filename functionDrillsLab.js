@@ -5,12 +5,10 @@
 */
 
 //CODE HERE
-function helloWorld() {
-  console.log('Hello, World!')
+const helloWorld = () => {
+  console.log('Hello World!')
 }
-
 helloWorld();
-
 ////////////////// PROBLEM 2 ////////////////////
 /*
   Create a function called printName which takes in a persons name and console logs it.
@@ -20,7 +18,7 @@ helloWorld();
 
 //CODE HERE
 
-function printName(name) {
+const printName = (name) => {
   console.log(name);
 }
 printName('Jake');
@@ -37,7 +35,7 @@ printName('Jake');
 */
 
 //CODE HERE
-function greeting(name) {
+const greeting = (name) => {
   console.log(`Hello, ${name}`);
 }
 greeting('Jake')
@@ -70,7 +68,7 @@ console.log(sum);
 //CODE HERE
 
 
-function nameCheck(name) {
+const nameCheck = (name) => {
   if (name === 'Steven') {
     return 'What is up Steven?'
   }else if (name === 'Bryan') {
@@ -274,10 +272,10 @@ function pond() {
 let globalScope = ['duck']
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['duck','rubberDuck', 'sailorDuck']
+let bathroomScope = ['duck', 'sailorDuck']
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['duck', 'sailorDuck']
+let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck']
 
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ['duck', 'realDuck']
